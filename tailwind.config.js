@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage:{
-        'home': "url('/assets/hero.png')"
+        'home': "url('/assets/hero.png')",
+        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
       }
     },
   },

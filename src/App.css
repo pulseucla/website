@@ -39,3 +39,8 @@
 .read-the-docs {
   color: #888;
 }
+
+.vertical-timeline::before {
+  /* this is the vertical line */
+  background: black !important;
+}

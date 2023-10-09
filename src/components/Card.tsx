@@ -4,7 +4,7 @@ const Card = (prop) => {
     const [button, setButton] = useState(false)
 
     return(
-        <div className='flex flex-col justify-center items-center text-center gap-10 border-2 lg:w-[30%] h-[50vh] lg:h-[65vh] border-black min-w-[312px]'>
+        <div className='flex flex-col justify-center items-center text-center gap-10 border-2 w-[30%] h-[712px] border-black min-w-[312px]'>
             <div>
                 <img src={prop.image}/>
             </div>

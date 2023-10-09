@@ -4,13 +4,24 @@ import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import './App.css'
 
 import Home from './components/Home'
-import Navbar from './components/Navbar';
+import About from './components/About';
+import Department from './components/Departments';
+import Community from './components/Community';
+import Recruitment from './components/Recruitment';
+import Test from './components/test';
 
 function App() {
 
   return (
     <BrowserRouter>
-      <Home/>
+      <Routes>
+        <Route path="/" element={<Home />}/>
+        <Route path="about-us" element={<About />} />
+        <Route path="departments" element={<Department />} />
+        <Route path="community" element={<Community />} />
+        <Route path="recruitment" element={<Recruitment/>}/>
+        <Route path="test" element={<Test/>}/>
+      </Routes>
     </BrowserRouter>
   )
 }
