@@ -8,7 +8,8 @@ import About from './components/About';
 import Department from './components/Departments';
 import Community from './components/Community';
 import Recruitment from './components/Recruitment';
-import Test from './components/test';
+import Board from './components/Board';
+import Members from './components/Members';
 
 function App() {
 
@@ -20,7 +21,8 @@ function App() {
         <Route path="departments" element={<Department />} />
         <Route path="community" element={<Community />} />
         <Route path="recruitment" element={<Recruitment/>}/>
-        <Route path="test" element={<Test/>}/>
+        <Route path="exec-board" element={<Board/>}/>
+        <Route path="members" element={<Members/>}/>
       </Routes>
     </BrowserRouter>
   )

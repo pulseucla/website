@@ -4,7 +4,7 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import Navbar from "./Navbar";
 import Footer from "./footer";
-import { Why_Apply, Recruitment_Timeline } from '../constants';
+import { Why_Apply, Recruitment_Timeline, Info_Sesh } from '../constants';
 
 interface card {
     icon: string,
@@ -45,13 +45,27 @@ const Timeline : React.FC<timeline> = ({timeline}) => {
                 </div>
             }
         >
-            <div className="flex-col flex gap-2 w-[30vw] text-left">
+            <div className="flex-col flex gap-2 max-w-[432px] w-[80%] text-left">
                 {/* <p className="font-bold md:text-[36px] text-[24px]"> {timeline.step} </p> */}
                 <p className="font-light">{timeline.step}</p>
                 <p className="font-light"> {timeline.description} </p>
             </div>
             {/* <p>Hello</p> */}
         </VerticalTimelineElement>
+    )
+}
+
+interface info {
+    info: {
+        details: string
+    }
+}
+
+const Info : React.FC<info> = ({info}) => {
+    return(
+        <div className="text-left">
+            <p>{info.details}</p><br />
+        </div>
     )
 }
 
@@ -88,7 +102,7 @@ const Recruitment = () => {
             </div>
 
             {/* Recruitment */}
-            <div className="flex flex-row">
+            <div className="hidden flex-row xl:flex justify-evenly w-screen">
                 <div className='flex flex-col'>
                     <VerticalTimeline
                         layout={'1-column-left'}
@@ -98,12 +112,61 @@ const Recruitment = () => {
                         ))}
                     </VerticalTimeline>
                 </div>
-                <div>
-                    <div>
-                        hello
+                <div className="flex flex-col justify-evenly items-center">
+                    <div className="border-2 border-[#93ACE0] flex justify-evenly flex-col w-[30vw] p-5">
+                        <p className="text-[36px] text-[#93ACE0]">Who can apply?</p><br/>
+                        <p className="text-left">
+                            PULSE only accepts undergraduates who are currently enrolled at UCLA.<br/><br/>
+
+                            Incoming freshmen must wait to apply until they are active students at UCLA.<br/><br/>
+
+                            Unfortunately, students currently in their last undergraduate year cannot apply 
+                            because they will no longer be undergraduates when they begin shadowing.​ <br/><br/>
+                        </p>
+                    </div>
+                    <div className="border-2 border-[#F56565] flex justify-evenly flex-col w-[30vw] p-5">
+                        <p className="text-[36px] text-[#F56565]">Who can apply?</p><br/>
+                        {Info_Sesh.map((info, index) => (
+                            <Info key={index} info={info}/>
+                        ))}
                     </div>
                 </div>
+            </div>
 
+            <div className="flex flex-col items-center xl:hidden">
+                <div className="border-2 border-[#93ACE0] flex justify-evenly flex-col w-[90vw] max-w-[600px] p-5">
+                    <p className="text-[36px] text-[#93ACE0]">Who can apply?</p><br/>
+                    <p className="text-left">
+                        PULSE only accepts undergraduates who are currently enrolled at UCLA.<br/><br/>
+
+                        Incoming freshmen must wait to apply until they are active students at UCLA.<br/><br/>
+
+                        Unfortunately, students currently in their last undergraduate year cannot apply 
+                        because they will no longer be undergraduates when they begin shadowing.​ <br/><br/>
+                    </p>
+                </div>
+                <div className='flex flex-col'>
+                    <VerticalTimeline
+                        layout={'1-column-left'}
+                    >
+                        {Recruitment_Timeline.map((timeline, index) => (
+                            <Timeline key={index} timeline={timeline}/>
+                        ))}
+                    </VerticalTimeline>
+                </div>
+                <div className="border-2 border-[#F56565] flex justify-evenly flex-col w-[90vw] max-w-[600px] p-5">
+                    <p className="text-[36px] text-[#F56565]">Who can apply?</p><br/>
+                    {Info_Sesh.map((info, index) => (
+                        <Info key={index} info={info}/>
+                    ))}
+                </div>
+            </div>
+
+            <div className="lg:w-[60vw] w-[80vw] text-[16px] font-bold">
+                <p>
+                    If you have any questions, please email us at <a className="underline" href={`mailto:“disha@uplers.com”`}>uclapulserecruitment@gmail.com</a>
+                    . We look forward to meeting you all and reading your applications!
+                </p>
             </div>
 
             <Footer/>

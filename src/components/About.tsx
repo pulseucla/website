@@ -1,11 +1,22 @@
-import React, { useEffect, useState } from "react"
-import Navbar from "./Navbar"
+import React, { useEffect, useState } from "react";
+import { Link } from 'react-router-dom';
+
+import Navbar from "./Navbar";
 import Footer from "./footer";
 
 const About = () => {
     return (
         <div className="flex flex-col gap-10 items-center w-screen">
             <Navbar />
+            <div className="flex flex-col md:hidden flex justify-center items-center gap-5 w-screen">
+                <div className="w-[80vw] h-[1px] bg-black"/>
+                <div className="flex-row justify-evenly w-screen flex">
+                    
+                    <Link to="/exec-board">Exec Board</Link>
+                    <Link to="/members">Members</Link>
+                </div>
+                <div className="w-[80vw] h-[1px] bg-black"/>
+            </div>
             <div className="pb-10 pt-10 bg-[#5C8FDB] bg-opacity-[25%] flex flex-row flex-wrap gap-5 items-center justify-evenly">
                 <div className="md:w-[50%] text-left gap-2 flex-col flex">
                     <div className="flex flex-row items-center gap-5">

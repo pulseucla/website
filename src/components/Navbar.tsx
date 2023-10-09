@@ -16,9 +16,11 @@ interface NavLinkProps {
 const Navbar = ({}) => {
     const [onHover, setHover] = useState(false)
     const [buttonBG, setButton] = useState(false)
-    const [dropDown, setDrop] = useState(false)
     const [toggle, setToggle] = useState(false)
+    const [dropDown, setDrop] = useState(false)
     const [dropDown1, setDrop1] = useState(false)
+    const [dropDown2, setDrop2] = useState(false)
+    const [dropDown3, setDrop3] = useState(false)
 
     return(
         <nav className={`w-screen self-center flex flex-col items-center`}>
@@ -28,7 +30,19 @@ const Navbar = ({}) => {
                 </div>
                 <div className='items-center text-center justify-center hidden md:flex'>
                     <div className='grid grid-cols-4 gap-4'>
-                        <NavLink title="ABOUT US" link="about-us"/>
+                        <div
+                            className='justify-center items-center'
+                            onMouseEnter={() =>setDrop1(true) }
+                            onMouseLeave={() => {setDrop1(false)}}
+                        > 
+                            <div><NavLink link="about-us" title="About Us"/></div>
+                            { dropDown1 ? (
+                            <ul className='absolute ml-[1rem] bg-white gap-2'>
+                                <li><NavLink title="Exec Board" link="exec-board"/></li>
+                                <li><NavLink title="Members" link="members"/></li>
+                            </ul>
+                            ) : (<></>)}
+                        </div>
                         <div
                             className='justify-center items-center'
                             onMouseEnter={() =>setDrop(true) }
@@ -78,15 +92,15 @@ const Navbar = ({}) => {
                             <li><NavLink title="ABOUT US" link="about-us"/></li>
                             <li>
                                 <div
-                                    onClick={()=>setDrop1(!dropDown1)}
-                                ><p className={`font-light ${dropDown1 ? "text-blue-600" : "text-black"}`}> SHADOWING </p></div>
-                                <ul className={`${!dropDown1 ? "hidden": "block"}`}>
+                                    onClick={()=>setDrop2(!dropDown2)}
+                                ><p className={`font-light ${dropDown2 ? "text-blue-600" : "text-black"}`}> SHADOWING </p></div>
+                                <ul className={`${!dropDown2 ? "hidden": "block"}`}>
                                     <li><NavLink title="Departments" link="departments"/></li>
                                     <li><NavLink title="Case Studies" link="clinical-symposiums"/></li>
                                 </ul>
                             </li>
-                                <li><NavLink title="RECRUITMENT" link="recruitment"/></li>
-                                <li><NavLink title="COMMUNITY" link="community"/></li>
+                            <li><NavLink title="RECRUITMENT" link="recruitment"/></li>
+                            <li><NavLink title="COMMUNITY" link="community"/></li>
                         </ul>
                     </div>
                 </div>

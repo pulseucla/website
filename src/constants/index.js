@@ -193,4 +193,41 @@ const Recruitment_Timeline = [
     },
 ]
 
-export { cards, departments, Community_Intro, Upcoming_Events, Past_Events, Why_Apply, Recruitment_Timeline };
+const Info_Sesh = [
+    {
+        details: "Session #1: Wednesday, February 22nd, 5-6pm PT (Week 7, VIRTUAL)"
+    },
+    {
+        details: "Session #2: Monday, February 27th, 6-7pm PT (Week 8, Neuroscience Research Building 132)"
+    },
+    {
+        details: "Pop in with PULSE Q&A: Thursday, March 2nd, 7-8:30pm PT (Week 8, VIRTUAL)"
+    },
+    {
+        details: "Q&A with the Directors: Monday, March 13th, 6-7pm PT (Week 10, VIRTUAL)"
+    },
+
+]
+
+const Board_Members = [
+    {
+        image: "/src/assets/board/faculty.png", 
+        name: "Dr. Amanda Kosack", 
+        title: "Faculty Chair and Advisor", 
+        description: ""
+    }
+]
+
+const Members = [
+    {
+        image: "/src/assets/board/Adriene_Tornel-Silva.png",
+        name: "Adriene Tornel-Silva",
+        major: "Psychobiology",
+        year: "2023",
+        fact: "I have read 1000+ books because reading is my favorite hobby.",
+        team_category: "Team Category",
+    }
+]
+
+export { cards, departments, Community_Intro, Upcoming_Events, Past_Events, Why_Apply, 
+    Recruitment_Timeline, Info_Sesh, Board_Members, Members };
