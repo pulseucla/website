@@ -1,9 +1,9 @@
 {
   "name": "pulse-site",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lawtlee.github.io/pulse-site",
+  "homepage": "https://lawtlee.github.io/pulse-site/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "@types/jquery": "^3.5.24",
+    "@types/node": "^20.8.8",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@types/react-slick": "^0.23.10",
