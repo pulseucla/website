@@ -26,3 +26,8 @@
   /* this is the vertical line */
   background: #94ACE0 !important;
 }
+
+.slick-slide img {
+  margin: auto;
+  padding: auto;
+}

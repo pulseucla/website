@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import './App.css'
 
@@ -9,7 +8,9 @@ import Department from './components/Departments';
 import Community from './components/Community';
 import Recruitment from './components/Recruitment';
 import Board from './components/Board';
-import Members from './components/Members';
+import Member from './components/Members';
+import Case_Study from './components/CaseStudies';
+import SaintBaldrick from './components/St_Baldricks';
 
 function App() {
 
@@ -22,7 +23,9 @@ function App() {
         <Route path="community" element={<Community />} />
         <Route path="recruitment" element={<Recruitment/>}/>
         <Route path="exec-board" element={<Board/>}/>
-        <Route path="members" element={<Members/>}/>
+        <Route path="members" element={<Member/>}/>
+        <Route path="clinical-symposiums" element={<Case_Study/>}/>
+        <Route path="st-baldricks" element={<SaintBaldrick/>}/>
       </Routes>
     </BrowserRouter>
   )

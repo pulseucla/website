@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface NavLinkProps {
@@ -35,7 +35,7 @@ const Navbar = ({}) => {
                             onMouseEnter={() =>setDrop1(true) }
                             onMouseLeave={() => {setDrop1(false)}}
                         > 
-                            <div><NavLink link="about-us" title="About Us"/></div>
+                            <div><NavLink link="about-us" title="ABOUT US"/></div>
                             { dropDown1 ? (
                             <ul className='absolute ml-[1rem] bg-white gap-2'>
                                 <li><NavLink title="Exec Board" link="exec-board"/></li>
@@ -48,7 +48,7 @@ const Navbar = ({}) => {
                             onMouseEnter={() =>setDrop(true) }
                             onMouseLeave={() => {setDrop(false)}}
                         > 
-                            <div><p className='font-light hover:text-blue-600'> SHADOWING </p></div>
+                            <div><p className='font-light hover:text-blue-600 cursor-pointer'> SHADOWING </p></div>
                             { dropDown ? (
                             <ul className='absolute ml-[0.5rem] bg-white gap-2'>
                                 <li><NavLink title="Departments" link="departments"/></li>
@@ -57,7 +57,18 @@ const Navbar = ({}) => {
                             ) : (<></>)}
                         </div>
                         <NavLink title="RECRUITMENT" link="recruitment"/>
-                        <NavLink title="COMMUNITY" link="community"/>
+                        <div
+                            className='justify-center items-center'
+                            onMouseEnter={() =>setDrop3(true) }
+                            onMouseLeave={() => {setDrop3(false)}}
+                        > 
+                            <div><NavLink link="community" title="COMMUNITY"/></div>
+                            { dropDown3 ? (
+                            <ul className='absolute ml-[0.5rem] bg-white gap-2'>
+                                <li><NavLink title="St. Baldrick's Event" link="st-baldricks"/></li>
+                            </ul>
+                            ) : (<></>)}
+                        </div>
                     </div>
                 </div>
                 <div className='md:flex justify-end align hidden'>

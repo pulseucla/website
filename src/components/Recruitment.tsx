@@ -5,6 +5,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import { Why_Apply, Recruitment_Timeline, Info_Sesh } from '../constants';
+import { Link } from "react-router-dom";
 
 interface card {
     icon: string,
@@ -85,7 +86,7 @@ const Recruitment = () => {
                         onMouseEnter={() => {setHover(true)}}
                         onMouseLeave={() => {setHover(false)}}
                     >
-                        <p>Access Application</p>
+                        <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfsRG3qoHKN-pNMu4PFYS0PbGMxn9dKJfZ3kPTCc5Q6OXwXIg/viewform">Access Application</Link>
                     </div>
                 </div>
                 <div className="w-[70vw] h-[2px] bg-black/25"/>

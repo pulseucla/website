@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 import Navbar from './Navbar';
 import Footer from './footer';
 import Card from './Card';
 import { cards } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Home = ({}) => {
     const [joinTeam, setTeam] = useState(false)
@@ -27,7 +28,7 @@ const Home = ({}) => {
                         </p>
                         <div 
                             className={`pl-2 pr-2 h-10 lg:h-16 lg:w-[40%] lg:pl-0 lg:pr-0 ${ joinTeam ? "bg-black ": "bg-white"} 
-                                ${ joinTeam ? "text-white" : "text-black"} flex items-center gap-2 justify-center`}
+                                ${ joinTeam ? "text-white" : "text-black"} flex items-center gap-2 justify-center cursor-pointer`}
                             onClick={() =>{
                                 window.location.href = '/recruitment'
                             }}
@@ -71,7 +72,7 @@ const Home = ({}) => {
                     </div>
                     <div 
                         className={`md:w-[30%] w-[30vw] border-2 border-black rounded-[10px] h-14 ${ learn ? "bg-black ": "bg-white"} 
-                            ${ learn ? "text-white" : "text-black"} flex items-center gap-2 justify-center`}
+                            ${ learn ? "text-white" : "text-black"} flex items-center gap-2 justify-center cursor-pointer`}
                         onClick={() =>{
                             window.location.href = '/about-us'
                         }}
@@ -132,8 +133,9 @@ const Home = ({}) => {
                     </div>
 
                 </div>
-                <div className='w-[40vw] font-serif text-[24px] text-white bg-[#DE505B]'>
-                   <p>SIGN UP</p> 
+                <div className='w-[40vw] font-serif text-[24px] text-white bg-[#DE505B] cursor-pointer'
+                >
+                   <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfsRG3qoHKN-pNMu4PFYS0PbGMxn9dKJfZ3kPTCc5Q6OXwXIg/viewform">SIGN UP</Link> 
                 </div>
             </div>
 

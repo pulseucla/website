@@ -5,7 +5,7 @@ import Footer from "./footer";
 
 import { motion } from "framer-motion"
 
-import { departments } from '../constants/index.js'
+import { departments } from '../constants'
 
 
 interface dropDownProps {
@@ -34,15 +34,6 @@ const dropDownAnimation = {
           }
         }
 };
-
-const rotatePlus = {
-    open:{
-        rotate: 0
-    },
-    close:{
-        rotate: 90
-    }
-}
 
 const DepartmentCard: React.FC<dropDownProps> = ({ description, department }) => {
     const [clicked, setClick] = useState(false)

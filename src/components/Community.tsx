@@ -1,41 +1,42 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
 import Footer from "./footer";
+import { Link } from "react-router-dom";
 
-import { Community_Intro, Upcoming_Events, Past_Events } from '../constants/index.js';
+import { Community_Intro, Past_Events } from '../constants';
 
-interface upcomingProps {
-    date: string,
-    time: string,
-    event_name: string,
-    details: string,
-    borderC: string,
-    bg: string
-}
+// interface upcomingProps {
+//     date: string,
+//     time: string,
+//     event_name: string,
+//     details: string,
+//     borderC: string,
+//     bg: string
+// }
 
-const UpcomingCard: React.FC<upcomingProps> = ({ date, time, event_name, details, borderC, bg }) => {
-    const [border, setBorder] = useState("border-black");
-    const [background, setBG] = useState("")
+// const UpcomingCard: React.FC<upcomingProps> = ({ date, time, event_name, details, borderC, bg }) => {
+//     const [border, setBorder] = useState("border-black");
+//     const [background, setBG] = useState("")
 
-    useEffect(() => { 
-        if (borderC) setBorder(borderC) 
-        if (bg) setBG(bg)
-    }), [];
+//     useEffect(() => { 
+//         if (borderC) setBorder(borderC) 
+//         if (bg) setBG(bg)
+//     }), [];
 
-    return(
-        <div className={`w-[80vw] max-w-[400px] h-[300px] flex flex-col items-center justify-evenly text-[24px] ${border} border-2 mb-4`}>
-            <div><p> {date} </p></div>
-            <div className="flex flex-col">
-                <p> {event_name} </p>
-                <p> {time} </p>
-            </div>
-            <div className={`w-[40%]  ${border} ${bg} border-2 rounded-[15px] pt-1 pb-1 pl-2 pr-2`}>
-                <p className="text-white">View More</p>
-            </div>
-        </div>
-    )
+//     return(
+//         <div className={`w-[80vw] max-w-[400px] h-[300px] flex flex-col items-center justify-evenly text-[24px] ${border} border-2 mb-4`}>
+//             <div><p> {date} </p></div>
+//             <div className="flex flex-col">
+//                 <p> {event_name} </p>
+//                 <p> {time} </p>
+//             </div>
+//             <div className={`w-[40%]  ${border} ${bg} border-2 rounded-[15px] pt-1 pb-1 pl-2 pr-2`}>
+//                 <p className="text-white">View More</p>
+//             </div>
+//         </div>
+//     )
 
-}
+// }
 
 interface pastProps {
     event_name: string,
@@ -59,6 +60,13 @@ const Community = () => {
     return(
         <div className="flex flex-col items-center w-screen gap-10">
             <Navbar/>
+            <div className="flex flex-col md:hidden flex justify-center items-center gap-5 w-screen">
+                <div className="w-[80vw] h-[1px] bg-black"/>
+                <div className="flex-row justify-evenly w-screen flex">
+                    <Link to="/st-baldricks">St. Baldrick's Event</Link>
+                </div>
+                <div className="w-[80vw] h-[1px] bg-black"/>
+            </div>
             <div className="flex flex-col flex-nowrap justify-center items-center z-[-1]">
                 <div className="flex flex-row overflow-hidden gap-3 items-center justify-evenly">
                     <div className="mt-5"><img src="/src/assets/community/pic1.png"/></div>
@@ -87,7 +95,7 @@ const Community = () => {
             </div>
 
             {/* Upcoming Events */}
-            <div className="flex flex-col justify-center items-center w-screen gap-5">
+            {/* <div className="flex flex-col justify-center items-center w-screen gap-5">
                 <div className="flex flex-row items-center gap-5 justify-left w-[80%]">
                     <p className="md:text-[56px] text-[36px]">
                         Our Community
@@ -104,7 +112,7 @@ const Community = () => {
                         <UpcomingCard key={index} {...event} />
                     ))}
                 </div>
-            </div>
+            </div> */}
                 
             {/* Past Events */}
             <div className={`flex flex-col justify-center items-center w-screen gap-5`}>

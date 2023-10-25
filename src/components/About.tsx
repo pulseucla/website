@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import { Link } from 'react-router-dom';
 
 import Navbar from "./Navbar";
@@ -8,7 +7,7 @@ const About = () => {
     return (
         <div className="flex flex-col gap-10 items-center w-screen">
             <Navbar />
-            <div className="flex flex-col md:hidden flex justify-center items-center gap-5 w-screen">
+            <div className="flex flex-col md:hidden justify-center items-center gap-5 w-screen">
                 <div className="w-[80vw] h-[1px] bg-black"/>
                 <div className="flex-row justify-evenly w-screen flex">
                     
@@ -17,8 +16,9 @@ const About = () => {
                 </div>
                 <div className="w-[80vw] h-[1px] bg-black"/>
             </div>
+
             <div className="pb-10 pt-10 bg-[#5C8FDB] bg-opacity-[25%] flex flex-row flex-wrap gap-5 items-center justify-evenly">
-                <div className="md:w-[50%] text-left gap-2 flex-col flex">
+                <div className="lg:w-[50%] text-left gap-2 flex-col flex w-[80vw]">
                     <div className="flex flex-row items-center gap-5">
                         <p className="text-[48px]">PULSE's Puropose</p>
                         <svg
@@ -50,7 +50,7 @@ const About = () => {
                         a career in medicine.
                     </p>
                 </div>
-                <div className="w-[40%]">
+                <div className="lg:w-[40%] w-[80vw]">
                     <img
                         src="/src/assets/about-us/pulse group jackets.jpg"
                         className=""
@@ -64,7 +64,7 @@ const About = () => {
             {/* Second Part of the Page */}
 
             {/* Royce */}
-            <div className="flex flex-row flex-wrap justify-evenly w-[100vw] xl:gap-0 gap-4">
+            <div className="flex flex-row flex-wrap lg:flex-nowrap justify-evenly w-[100vw] xl:gap-0 gap-4">
                 <div className="flex flex-col xl:w-[50%] w-[75%] justify-center text-left gap-5">
                     <div className="text-[48px] xl:text-left text-center">
                         <div className="xl:flex flex-row gap-5">
@@ -82,7 +82,7 @@ const About = () => {
                             in <span className="underline">Healthcare</span>
                         </p>
                     </div>
-                    <div className="text-[24px] font-light">
+                    <div className="text-[24px] font-light lg:ml-3 xl:ml-0 ml-0">
                         <p>
                             <b>PULSE</b> was founded in Spring 2015 by Anant
                             Randhawa, Amol Patel, Vandan Patel, and Karanveer
@@ -102,13 +102,13 @@ const About = () => {
 
             {/* Hospital */}
 
-            <div className="flex flex-row justify-evenly w-screen items-center text-left">
+            <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-evenly w-screen items-center text-left font-light mt-10 mb-10">
                 <div>
-                    <img src="/src/assets/about-us/reagan.png" />
+                    <img src="/src/assets/about-us/reagan.png" className="lg:w-[50vw] w-[80vw]"/>
                 </div>
-                <div className="w-[30%]">
+                <div className="lg:w-[40vw] text-[24px] w-[80vw]">
                     <p>
-                        <b>UCLA’s Ronald Reagan Medical Center (RRMC)</b> is
+                        <span className="font-bold">UCLA’s Ronald Reagan Medical Center (RRMC)</span> is
                         ranked the third best hospital in the nation. As a
                         teaching hospital, RRMC provides an unparalleled
                         learning experience. PULSE collaborates with RMMC’s
@@ -122,11 +122,11 @@ const About = () => {
             </div>
 
             {/* Shave + Zoom */}
-            <div className="flex flex-row justify-evenly w-screen items-center text-left">
-                <div className="flex flex-col w-[40%] gap-5">
+            <div className="flex flex-row flex-wrap justify-evenly w-screen items-center text-left text-[24px] font-light">
+                <div className="flex flex-col lg:w-[40%] gap-5 w-[80vw]">
                     <img src="/src/assets/about-us/shave.png"/>
                     <p>
-                        <b>Outside the hospital</b>, PULSE prides itself as an
+                        <span className="font-bold">Outside the hospital</span>, PULSE prides itself as an
                         organization that promotes community involvement through
                         our annual St. Baldrick’s Brave the Shave Event, to
                         raise funds and awareness for pediatric cancer research.
@@ -136,7 +136,7 @@ const About = () => {
                         physicians and PULSE alumni.
                     </p>
                 </div>
-                <div className="w-[40%]">
+                <div className="lg:w-[40%] w-fit">
                     <img src="/src/assets/about-us/group_photo.png"/>
                 </div>
             </div>
