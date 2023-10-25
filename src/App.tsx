@@ -15,7 +15,7 @@ import SaintBaldrick from './components/St_Baldricks';
 function App() {
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pulse-site/">
       <Routes>
         <Route path="/" element={<Home />}/>
         <Route path="about-us" element={<About />} />
