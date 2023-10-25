@@ -60,7 +60,7 @@ const Community = () => {
     return(
         <div className="flex flex-col items-center w-screen gap-10">
             <Navbar/>
-            <div className="flex flex-col md:hidden flex justify-center items-center gap-5 w-screen">
+            <div className="flex-col md:hidden flex justify-center items-center gap-5 w-screen">
                 <div className="w-[80vw] h-[1px] bg-black"/>
                 <div className="flex-row justify-evenly w-screen flex">
                     <Link to="/st-baldricks">St. Baldrick's Event</Link>
