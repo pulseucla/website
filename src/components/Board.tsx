@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 import Footer from "./footer";
 import { Board_Members } from '../constants'
 
-const BoardMemberCard = React.lazy(()=> import('./BoardMemberCard'))
+// const BoardMemberCard = React.lazy(()=> import('./BoardMemberCard'))
 
-// import BoardMemberCard from "./BoardMemberCard";
+import BoardMemberCard from "./BoardMemberCard";
 
 const Board = () => {
     const Memoized_Board = useMemo(()=>Board_Members, []);
@@ -21,12 +21,12 @@ const Board = () => {
                         <span className="font-light">experienced</span>, &  
                         <span className="text-[#93ACE0] font-light"> caring</span>
                         <br/> executive board
-                        <img src="/src/assets/board/line.png" className="hidden md:block self-right ml-[220px]" loading="lazy"/>
+                        <img src="./assets/board/line.png" className="hidden md:block self-right ml-[220px]" loading="lazy"/>
                     </p>
                     
                 </div>
                 <div className="flex justify-center">
-                    <img src="/src/assets/board/hero.png" className="w-[70%] hidden md:block"/>
+                    <img src="./assets/board/hero.png" className="w-[70%] hidden md:block"/>
                 </div>
             </div>
 

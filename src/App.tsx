@@ -15,17 +15,17 @@ import SaintBaldrick from './components/St_Baldricks';
 function App() {
 
   return (
-    <BrowserRouter basename="/pulse-site/">
+    <BrowserRouter basename={'/pulse-site/'}>
       <Routes>
         <Route path="/" element={<Home />}/>
-        <Route path="about-us" element={<About />} />
-        <Route path="departments" element={<Department />} />
-        <Route path="community" element={<Community />} />
-        <Route path="recruitment" element={<Recruitment/>}/>
-        <Route path="exec-board" element={<Board/>}/>
-        <Route path="members" element={<Member/>}/>
-        <Route path="clinical-symposiums" element={<Case_Study/>}/>
-        <Route path="st-baldricks" element={<SaintBaldrick/>}/>
+        <Route path="/about-us" element={<About />} />
+        <Route path="/departments" element={<Department />} />
+        <Route path="/community" element={<Community />} />
+        <Route path="/recruitment" element={<Recruitment/>}/>
+        <Route path="/exec-board" element={<Board/>}/>
+        <Route path="/members" element={<Member/>}/>
+        <Route path="/clinical-symposiums" element={<Case_Study/>}/>
+        <Route path="/st-baldricks" element={<SaintBaldrick/>}/>
       </Routes>
     </BrowserRouter>
   )

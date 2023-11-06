@@ -52,7 +52,7 @@ const About = () => {
                 </div>
                 <div className="lg:w-[40%] w-[80vw]">
                     <img
-                        src="/src/assets/about-us/pulse group jackets.jpg"
+                        src="./assets/about-us/pulse group jackets.jpg"
                         className=""
                     />
                 </div>
@@ -73,7 +73,7 @@ const About = () => {
                                 Pathway
                             </p>
                             <img
-                                src="/src/assets/about-us/Red_arrow.png"
+                                src="./assets/about-us/Red_arrow.png"
                                 className="hidden xl:block"
                             />
                         </div>
@@ -96,7 +96,7 @@ const About = () => {
                     </div>
                 </div>
                 <div>
-                    <img src="/src/assets/about-us/Royce.png" className="" />
+                    <img src="./assets/about-us/Royce.png" className="" />
                 </div>
             </div>
 
@@ -104,7 +104,7 @@ const About = () => {
 
             <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-evenly w-screen items-center text-left font-light mt-10 mb-10">
                 <div>
-                    <img src="/src/assets/about-us/reagan.png" className="lg:w-[50vw] w-[80vw]"/>
+                    <img src="./assets/about-us/reagan.png" className="lg:w-[50vw] w-[80vw]"/>
                 </div>
                 <div className="lg:w-[40vw] text-[24px] w-[80vw]">
                     <p>
@@ -124,7 +124,7 @@ const About = () => {
             {/* Shave + Zoom */}
             <div className="flex flex-row flex-wrap justify-evenly w-screen items-center text-left text-[24px] font-light">
                 <div className="flex flex-col lg:w-[40%] gap-5 w-[80vw]">
-                    <img src="/src/assets/about-us/shave.png"/>
+                    <img src="./assets/about-us/shave.png"/>
                     <p>
                         <span className="font-bold">Outside the hospital</span>, PULSE prides itself as an
                         organization that promotes community involvement through
@@ -137,7 +137,7 @@ const About = () => {
                     </p>
                 </div>
                 <div className="lg:w-[40%] w-fit">
-                    <img src="/src/assets/about-us/group_photo.png"/>
+                    <img src="./assets/about-us/group_photo.png"/>
                 </div>
             </div>
             <Footer />

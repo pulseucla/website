@@ -7,10 +7,10 @@ interface NavLinkProps {
   }
   
   const NavLink: React.FC<NavLinkProps> = ({ title, link }) => (
-      <a href={`/${link}`} className='text-black font-light hover:text-blue-600 hover:underline-offset-4 hover:underline
+      <Link to={`/${link}`} className='text-black font-light hover:text-blue-600 hover:underline-offset-4 hover:underline
         '>
           {title}
-      </a>
+      </Link>
   );
 
 const Navbar = ({}) => {
@@ -90,7 +90,7 @@ const Navbar = ({}) => {
                 </div>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
                     <img
-                        src={toggle ? "/src/assets/close.svg" : "/src/assets/menu.svg" }
+                        src={toggle ? "./assets/close.svg" : "./assets/menu.svg" }
                         alt="menu"
                         className="w-[28px] h-[28px] object-container cursor-pointer "
                         onClick={() => setToggle(!toggle)}

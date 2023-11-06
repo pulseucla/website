@@ -69,12 +69,12 @@ const Community = () => {
             </div>
             <div className="flex flex-col flex-nowrap justify-center items-center z-[-1]">
                 <div className="flex flex-row overflow-hidden gap-3 items-center justify-evenly">
-                    <div className="mt-5"><img src="/src/assets/community/pic1.png"/></div>
-                    <div className="mb-5"><img src="/src/assets/community/pic2.png"/></div>
-                    <div className="mt-5"><img src="/src/assets/community/pic3.png"/></div>
-                    <div className="mb-5"><img src="/src/assets/community/pic4.png"/></div>
-                    <div className="mt-5"><img src="/src/assets/community/pic5.png"/></div>
-                    <div className="mb-5"><img src="/src/assets/community/pic6.png"/></div>
+                    <div className="mt-5"><img src="./assets/community/pic1.png"/></div>
+                    <div className="mb-5"><img src="./assets/community/pic2.png"/></div>
+                    <div className="mt-5"><img src="./assets/community/pic3.png"/></div>
+                    <div className="mb-5"><img src="./assets/community/pic4.png"/></div>
+                    <div className="mt-5"><img src="./assets/community/pic5.png"/></div>
+                    <div className="mb-5"><img src="./assets/community/pic6.png"/></div>
                 </div>
                 <div className={`flex flex-col absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen 
                                 items-center h-[100%] justify-center md:gap-5 gap-2`}>

@@ -46,7 +46,7 @@ const DepartmentCard: React.FC<dropDownProps> = ({ description, department }) =>
                 >
                     <img 
                         className={clicked ? "w-[18px]": "w-[18px] h-[18px]"}
-                        src={clicked ? "/src/assets/departments/minus.png" : "/src/assets/departments/plus.png"}
+                        src={clicked ? "./assets/departments/minus.png" : "./assets/departments/plus.png"}
                     />
                 </div>
                 <p>
@@ -78,19 +78,19 @@ const Department = () => {
                 <div className="flex flex-row overflow-hidden gap-3 items-center justify-evenly">
                     <div className="w-[300px] h-[418px] lg:flex hidden overflow-hidden">
                         <img
-                            src="/src/assets/departments/pulse nat shadow.jpg"
+                            src="./assets/departments/pulse nat shadow.jpg"
                             className="w-[100%] h-[100%]"
                         />
                     </div>
                     <div className="w-[430px] h-[418px] lg:flex hidden overflow-hidden">
                         <img
-                            src="/src/assets/departments/pulse andy zach shadow.jpg"
+                            src="./assets/departments/pulse andy zach shadow.jpg"
                             className="h-[100%] w-[100%]"
                         />
                     </div>
                     <div className="w-[300px] h-[418px] lg:flex hidden overflow-hidden">
                         <img
-                            src="/src/assets/departments/pulse nath shadow.jpg"
+                            src="./assets/departments/pulse nath shadow.jpg"
                             className="h-[100%] w-[100%]"
                         />
                     </div>
@@ -108,11 +108,11 @@ const Department = () => {
             {/* Why Shadow */}
             <div className="flex flex-row flex-wrap gap-5 justify-center z-0">
                 <div className="lg:w-[40vw] w-[100%] flex justify-center">
-                    <img src="/src/assets/departments/shadow.png" />
+                    <img src="./assets/departments/shadow.png" />
                 </div>
                 <div className="flex flex-col justify-evenly lg:w-[40vw] w-[100%] text-left gap-5">
                     <div className="flex items-center gap-5 justify-center lg:justify-start">
-                        <img src="/src/assets/departments/question.svg" />
+                        <img src="./assets/departments/question.svg" />
                         <p className="lg:text-[48px] text-[24px]">Why Shadow?</p>
                     </div>
                     <div className="flex justify-center">

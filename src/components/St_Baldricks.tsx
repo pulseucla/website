@@ -15,12 +15,12 @@ const SaintBaldrick = () => {
                     <div className="flex flex-row text-[48px] gap-5 justify-center lg:justify-start">
                         <p>St. Baldrick's Event</p>
                         <img
-                            src="/src/assets/st-baldricks/red_squiggly.png"
+                            src="./assets/st-baldricks/red_squiggly.png"
                             className="md:block hidden"
                         />
                     </div>
                     <div className="overflow-hidden">
-                        <img src="/src/assets/st-baldricks/hero.png" />
+                        <img src="./assets/st-baldricks/hero.png" />
                     </div>
                 </div>
                 <div className="md:text-[36px] text-[24px] font-light lg:text-left max-w-[1025px]">
@@ -36,7 +36,7 @@ const SaintBaldrick = () => {
 
             <div className="flex flex-row flex-wrap w-screen gap-10 lg:ml-[30vh] items-center lg:justify-start justify-center">
                 <div className="lg:w-[30vw]">
-                    <img src="/src/assets/st-baldricks/pulse_field.png" />
+                    <img src="./assets/st-baldricks/pulse_field.png" />
                 </div>
                 <div className="flex flex-col text-[24px] text-left lg:w-[50vw] gap-5 justify-center lg:h-[100%] w-[80vw]">
                     <p className="font-bold">OUR PAST YEARS</p>

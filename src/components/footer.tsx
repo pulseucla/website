@@ -4,7 +4,7 @@ const Footer = () => {
             <p className="font-medium">PULSE at UCLA</p>
             <p className="font-light">Copyright 2023 Innovative Design at UCLA</p>
             <div>
-                <img src="/src/assets/footer.png"/>
+                <img src="./assets/footer.png"/>
             </div>
         </div>
     )

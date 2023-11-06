@@ -27,7 +27,7 @@ const Case_Study = () => {
                     </p>
                 </div>
                 <div>
-                    <img src="/src/assets/clinical-symposiums/hero.png" className="lg:w-fit "/>
+                    <img src="./assets/clinical-symposiums/hero.png" className="lg:w-fit "/>
                 </div>
             </div>
 
@@ -46,7 +46,7 @@ const Case_Study = () => {
 
             <div className="flex flex-row flex-wrap justify-evenly gap-5">
                 <div className="w-[80vw] max-w-[400px]">
-                    <img src="/src/assets/clinical-symposiums/why.png"/>
+                    <img src="./assets/clinical-symposiums/why.png"/>
                 </div>
                 <div className="flex justify-evenly flex-col w-[80vw] max-w-[600px] gap-5">
                     <div className="flex gap-5 items-center">

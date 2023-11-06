@@ -81,7 +81,7 @@ const Recruitment = () => {
                 <div className="flex flex-col items-center justify-center gap-3">
                     <p className="text-[48px]">Apply for Pulse</p>
                     <p className="md:w-[40vw] text-[24px]">Join our organization for a shadowing experience in the healthcare industry</p>
-                    <div className={`rounded-[15px] flex bg-[#DE505B] w-[200px] ${hover ? "text-black" : "text-white"} justify-center p-1`}
+                    <div className={`rounded-[15px] flex bg-[#DE505B] w-[200px] ${hover ? "text-black" : "text-white"} justify-center p-1 cursor-pointer`}
                         onClick={()=>{window.location.href = ''}}
                         onMouseEnter={() => {setHover(true)}}
                         onMouseLeave={() => {setHover(false)}}
