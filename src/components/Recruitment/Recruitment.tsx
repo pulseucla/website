@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
-import Navbar from "./Navbar";
-import Footer from "./footer";
-import { Why_Apply, Recruitment_Timeline, Info_Sesh } from '../constants';
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
+import { Why_Apply, Recruitment_Timeline, Info_Sesh, Application_Link } from './constants';
 import { Link } from "react-router-dom";
 
 interface card {
@@ -86,7 +86,7 @@ const Recruitment = () => {
                         onMouseEnter={() => {setHover(true)}}
                         onMouseLeave={() => {setHover(false)}}
                     >
-                        <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfsRG3qoHKN-pNMu4PFYS0PbGMxn9dKJfZ3kPTCc5Q6OXwXIg/viewform">Access Application</Link>
+                        <Link to={Application_Link}>Access Application</Link>
                     </div>
                 </div>
                 <div className="w-[70vw] h-[2px] bg-black/25"/>
@@ -126,13 +126,18 @@ const Recruitment = () => {
                         </p>
                     </div>
                     <div className="border-2 border-[#F56565] flex justify-evenly flex-col w-[30vw] p-5">
-                        <p className="text-[36px] text-[#F56565]">Who can apply?</p><br/>
+                        <p className="text-[36px] text-[#F56565]">Information Sessions</p><br/>
                         {Info_Sesh.map((info, index) => (
                             <Info key={index} info={info}/>
                         ))}
                     </div>
                 </div>
             </div>
+
+
+
+
+            {/* Mobile version */}
 
             <div className="flex flex-col items-center xl:hidden">
                 <div className="border-2 border-[#93ACE0] flex justify-evenly flex-col w-[90vw] max-w-[600px] p-5">
@@ -156,7 +161,7 @@ const Recruitment = () => {
                     </VerticalTimeline>
                 </div>
                 <div className="border-2 border-[#F56565] flex justify-evenly flex-col w-[90vw] max-w-[600px] p-5">
-                    <p className="text-[36px] text-[#F56565]">Who can apply?</p><br/>
+                    <p className="text-[36px] text-[#F56565]">Information Sessions</p><br/>
                     {Info_Sesh.map((info, index) => (
                         <Info key={index} info={info}/>
                     ))}

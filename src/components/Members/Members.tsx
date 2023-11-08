@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
 
-import Navbar from "./Navbar";
-import Footer from "./footer";
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
 
 
-import { Pulse_Members } from '../constants'
+import { Pulse_Members, Big_Image } from './constants'
 
 // const MemberCard = React.lazy(()=> import('./MemberCard'))
 
@@ -19,7 +19,7 @@ const Member = () => {
 
             <div className="flex flex-col flex-nowrap justify-center items-center z-[-1]">
                 <div className="w-[80vw] hidden md:block">
-                    <img src="./assets/members/hero.png" className="w-[100%]"/>
+                    <img src={Big_Image} className="w-[100%]"/>
                 </div>
                 <div className={`flex flex-col md:absolute relative p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen items-center h-full justify-center`}>
                     <p className="text-[48px]">A Team with <span className="text-[#DE505B]">Heart</span> & <span className="underline">Pulse</span></p>

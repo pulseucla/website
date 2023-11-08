@@ -1,9 +1,8 @@
 import React, { useMemo } from "react";
-import Navbar from "./Navbar";
-import Footer from "./footer";
-import { Board_Members } from '../constants'
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
+import { Board_Members } from './constants'
 
-// const BoardMemberCard = React.lazy(()=> import('./BoardMemberCard'))
 
 import BoardMemberCard from "./BoardMemberCard";
 

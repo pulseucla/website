@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import Navbar from "./Navbar";
-import Footer from "./footer";
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
 
 import { motion } from "framer-motion"
 
-import { departments } from '../constants'
+import * as constants from './constants'
 
 
 interface dropDownProps {
@@ -41,7 +41,7 @@ const DepartmentCard: React.FC<dropDownProps> = ({ description, department }) =>
     return(
         <div className="flex flex-col w-full border-b-2 pb-2">
             <div className="flex justify-left gap-4 items-center">
-                <div className="w-[18px] h-[18px] flex items-center"
+                <div className="w-[18px] h-[18px] flex items-center cursor-pointer"
                     onClick={()=>setClick(!clicked)}
                 >
                     <img 
@@ -117,13 +117,7 @@ const Department = () => {
                     </div>
                     <div className="flex justify-center">
                         <p className="font-light lg:text-[20px] text-[16px] max-w-[80vw]">
-                            Through shadowing, students get to see a glimpse into
-                            the everyday lives of physicians at Ronald Reagan and
-                            can visualize what kind of healthcare setting they
-                            imagine themselves working in. Our members form
-                            connections with medical personnel and, often times,
-                            receive mentorship from med students or residents who
-                            were in their positions before.
+                            {constants.Blurb_1}
                         </p>
                     </div>
                 </div>
@@ -133,7 +127,7 @@ const Department = () => {
             <div className="w-screen bg-[#B05454] bg-opacity-[25%] p-10 pt-10 flex-col items-center flex gap-5">
                 <p className="text-[50px]"> Departments </p>
                 <div className="w-[80vw] flex-col flex gap-4 border-2 p-5 rounded-[25px] bg-white">
-                    {departments.map((department, index) => (
+                    {constants.departments.map((department, index) => (
                         <DepartmentCard key={index} {...department} />
                     ))}
                 </div>

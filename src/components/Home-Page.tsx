@@ -1,15 +1,15 @@
 import { useState } from 'react';
 
-import Navbar from './Navbar';
-import Footer from './footer';
-import Card from './Card';
+import Navbar from './Miscellaneous/Navbar';
+import Footer from './Miscellaneous/footer';
+import Card from './Miscellaneous/Card';
 import { cards } from '../constants';
 import { Link } from 'react-router-dom';
 
 const Home = ({}) => {
     const [joinTeam, setTeam] = useState(false)
     const [learn, setLearn] = useState(false)
-
+    const [button, setButton] = useState(false)
     return (
         <div className="flex flex-col justify-center items-center flex-wrap gap-10 pb-10">
             <Navbar />
@@ -141,9 +141,6 @@ const Home = ({}) => {
                             ${
                                 learn ? "text-white" : "text-black"
                             } flex items-center gap-2 justify-center cursor-pointer`}
-                        onClick={() => {
-                            window.location.href = "/about-us";
-                        }}
                         onMouseEnter={() => {
                             setLearn(true);
                         }}
@@ -151,7 +148,9 @@ const Home = ({}) => {
                             setLearn(false);
                         }}
                     >
-                        <p>Learn More</p>
+                        <Link to={`/about-us`}>
+                            <p>Learn More</p>
+                        </Link>
                     </div>
                 </div>
             </div>
@@ -233,7 +232,19 @@ const Home = ({}) => {
                         <p>FILL OUT OUR INTEREST FORM</p>
                     </div>
                 </div>
-                <div className="w-[40vw] font-serif text-[24px] text-white bg-[#DE505B] cursor-pointer">
+                <div
+                    className={`w-[40vw] font-serif text-[24px] ${
+                        button
+                            ? "text-[#DE505B] bg-white border-2 border-black"
+                            : "text-white bg-[#DE505B]"
+                    } cursor-pointer`}
+                    onMouseEnter={() => {
+                        setButton(true);
+                    }}
+                    onMouseLeave={() => {
+                        setButton(false);
+                    }}
+                >
                     <Link to="https://docs.google.com/forms/d/e/1FAIpQLSfsRG3qoHKN-pNMu4PFYS0PbGMxn9dKJfZ3kPTCc5Q6OXwXIg/viewform">
                         SIGN UP
                     </Link>

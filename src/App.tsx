@@ -2,15 +2,15 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import './App.css'
 
-import Home from './components/Home'
-import About from './components/About';
-import Department from './components/Departments';
-import Community from './components/Community';
-import Recruitment from './components/Recruitment';
-import Board from './components/Board';
-import Member from './components/Members';
-import Case_Study from './components/CaseStudies';
-import SaintBaldrick from './components/St_Baldricks';
+import Home from './components/Home-Page'
+import About from './components/About/About';
+import Department from './components/Departments/Departments';
+import Community from './components/Community/Community';
+import Recruitment from './components/Recruitment/Recruitment';
+import Board from './components/Exec-board/Board';
+import Member from './components/Members/Members';
+import Case_Study from './components/Case-Studies/CaseStudies';
+import SaintBaldrick from './components/St-Baldricks/St_Baldricks';
 
 function App() {
 

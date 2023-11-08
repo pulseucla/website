@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 
-import Navbar from "./Navbar";
-import Footer from "./footer";
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
+
+import * as about from "./constants"
 
 const About = () => {
     return (
@@ -37,23 +39,12 @@ const About = () => {
                         </svg>
                     </div>
                     <p className="text-[24px] font-light">
-                        PULSE (Pre-medical Undergraduate Learning through
-                        Shadowing Experience) is a UCLA student-run physician
-                        shadowing organization aiming to provide members with a
-                        holistic overview of the medical field through exposure
-                        to a diverse array of clinical specialties, community
-                        involvement, and professional development. As an
-                        undergraduate organization, we aspire to encourage our
-                        members to explore the multi-faceted nature of
-                        healthcare in order to challenge them intellectually,
-                        broaden their perspectives, and better prepare them for
-                        a career in medicine.
+                        {about.Pulse_Purpose}
                     </p>
                 </div>
                 <div className="lg:w-[40%] w-[80vw]">
                     <img
-                        src="./assets/about-us/pulse group jackets.jpg"
-                        className=""
+                        src={about.images[0]}
                     />
                 </div>
             </div>
@@ -83,20 +74,11 @@ const About = () => {
                         </p>
                     </div>
                     <div className="text-[24px] font-light lg:ml-3 xl:ml-0 ml-0">
-                        <p>
-                            <b>PULSE</b> was founded in Spring 2015 by Anant
-                            Randhawa, Amol Patel, Vandan Patel, and Karanveer
-                            Syal to provide undergraduate students with the
-                            opportunity to experience all aspects of the
-                            hospital in their undergraduate career. Our
-                            organization does not have a GPA requirement as we
-                            feel that a physician's capabilities are not always
-                            measured by just a number.
-                        </p>
+                        <about.Blurb_1/>
                     </div>
                 </div>
                 <div>
-                    <img src="./assets/about-us/Royce.png" className="" />
+                    <img src={about.images[1]}/>
                 </div>
             </div>
 
@@ -104,40 +86,21 @@ const About = () => {
 
             <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-evenly w-screen items-center text-left font-light mt-10 mb-10">
                 <div>
-                    <img src="./assets/about-us/reagan.png" className="lg:w-[50vw] w-[80vw]"/>
+                    <img src={about.images[2]} className="lg:w-[50vw] w-[80vw]"/>
                 </div>
                 <div className="lg:w-[40vw] text-[24px] w-[80vw]">
-                    <p>
-                        <span className="font-bold">UCLA’s Ronald Reagan Medical Center (RRMC)</span> is
-                        ranked the third best hospital in the nation. As a
-                        teaching hospital, RRMC provides an unparalleled
-                        learning experience. PULSE collaborates with RMMC’s
-                        medical students, physicians, residents, and other
-                        medical personnel to offer UCLA undergraduates the
-                        opportunity to understand how various departments
-                        operate as a functional unit and explore the different
-                        dimensions of a career in the medical field.
-                    </p>
+                    <about.Blurb_2/>
                 </div>
             </div>
 
             {/* Shave + Zoom */}
             <div className="flex flex-row flex-wrap justify-evenly w-screen items-center text-left text-[24px] font-light">
                 <div className="flex flex-col lg:w-[40%] gap-5 w-[80vw]">
-                    <img src="./assets/about-us/shave.png"/>
-                    <p>
-                        <span className="font-bold">Outside the hospital</span>, PULSE prides itself as an
-                        organization that promotes community involvement through
-                        our annual St. Baldrick’s Brave the Shave Event, to
-                        raise funds and awareness for pediatric cancer research.
-                        Additionally, we host quarterly professional development
-                        workshops where members have the opportunity to develop
-                        and refine their career goals under the guidance of UCLA
-                        physicians and PULSE alumni.
-                    </p>
+                    <img src={about.images[3]}/>
+                    <about.Blurb_3/>
                 </div>
                 <div className="lg:w-[40%] w-fit">
-                    <img src="./assets/about-us/group_photo.png"/>
+                    <img src={about.images[4]}/>
                 </div>
             </div>
             <Footer />

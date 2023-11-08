@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
-import Footer from "./footer";
+import Navbar from "../Miscellaneous/Navbar";
+import Footer from "../Miscellaneous/footer";
 import { Link } from "react-router-dom";
 
-import { Community_Intro, Past_Events } from '../constants';
+import * as constants from './constants';
 
 // interface upcomingProps {
 //     date: string,
@@ -69,26 +69,26 @@ const Community = () => {
             </div>
             <div className="flex flex-col flex-nowrap justify-center items-center z-[-1]">
                 <div className="flex flex-row overflow-hidden gap-3 items-center justify-evenly">
-                    <div className="mt-5"><img src="./assets/community/pic1.png"/></div>
-                    <div className="mb-5"><img src="./assets/community/pic2.png"/></div>
-                    <div className="mt-5"><img src="./assets/community/pic3.png"/></div>
-                    <div className="mb-5"><img src="./assets/community/pic4.png"/></div>
-                    <div className="mt-5"><img src="./assets/community/pic5.png"/></div>
-                    <div className="mb-5"><img src="./assets/community/pic6.png"/></div>
+                    <div className="mt-5"><img src={constants.images[0]}/></div>
+                    <div className="mb-5"><img src={constants.images[1]}/></div>
+                    <div className="mt-5"><img src={constants.images[2]}/></div>
+                    <div className="mb-5"><img src={constants.images[3]}/></div>
+                    <div className="mt-5"><img src={constants.images[4]}/></div>
+                    <div className="mb-5"><img src={constants.images[5]}/></div>
                 </div>
                 <div className={`flex flex-col absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen 
                                 items-center h-[100%] justify-center md:gap-5 gap-2`}>
                     <div className="md:text-[48px] text-[24px]">
-                        <p className="">{Community_Intro.Top_Half}</p>
+                        <p className="">{constants.Community_Intro.Top_Half}</p>
                         <div className="rounded-[50px] bg-white md:pl-5 md:pr-5 md:pt-3 md:pb-3 p-1">
                             <p className="text-black">
-                                {Community_Intro.Bottom_Half}
+                                {constants.Community_Intro.Bottom_Half}
                             </p>
                         </div>
                     </div>                  
                     <div className="w-[60vw] text-wrap">
                         <p className="md:text-[16px] text-[10px]">
-                            {Community_Intro.Text}
+                            {constants.Community_Intro.Text}
                         </p>
                     </div>
                 </div>
@@ -128,7 +128,7 @@ const Community = () => {
                     </div>
                 </div>
                 <div className={`flex flex-row flex-wrap justify-evenly gap-4`}>
-                    {Past_Events.map((event, index) => (
+                    {constants.Past_Events.map((event, index) => (
                         <PastCard key={index} {...event} />
                     ))}
                 </div>

@@ -2,7 +2,7 @@ import { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import { Image_slider } from '../constants';
+import { Image_slider } from "../St-Baldricks/constants"
 
 const CenterMode: React.FC = () => {
   const sliderRef = useRef<Slider | null>(null);
