@@ -22,7 +22,7 @@ const About = () => {
             <div className="pb-10 pt-10 bg-[#5C8FDB] bg-opacity-[25%] flex flex-row flex-wrap gap-5 items-center justify-evenly">
                 <div className="lg:w-[50%] text-left gap-2 flex-col flex w-[80vw]">
                     <div className="flex flex-row items-center gap-5">
-                        <p className="text-[48px]">PULSE's Puropose</p>
+                        <p className="text-[48px]">PULSE's Purpose</p>
                         <svg
                             width="35"
                             height="30"

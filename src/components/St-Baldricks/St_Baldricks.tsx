@@ -44,13 +44,13 @@ const SaintBaldrick = () => {
                 </div>
             </div>
 
-            <div className="flex flex-col text-[24px] lg:text-left lg:items-start w-screen lg:ml-[30vh] gap-2">
-                <p className="font-bold">TAKE A LOOK</p>
+            {/* <div className="flex flex-col text-[24px] lg:text-left md:items-start items-center w-screen lg:ml-[30vh] gap-2">
+                <p className="font-bold">TAKE A LOOK</p> */}
                 {/* Add a carousel */}
-                <SimpleSlider />
-            </div>
+                {/* <SimpleSlider />
+            </div> */}
 
-            <div className="flex flex-col text-[24px] lg:text-left lg:ml-[30vh] lg:items-start w-screen text-wrap mb-10">
+            <div className="flex flex-col text-[24px] lg:text-left lg:ml-[30vh] items-center lg:items-start w-screen text-wrap mb-10">
                 <p className="font-bold">{constants.Blurbs.Third_Blurb.title}</p>
                 <p className="font-light w-[80vw]">
                     {constants.Blurbs.Third_Blurb.text}

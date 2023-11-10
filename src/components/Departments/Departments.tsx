@@ -49,12 +49,12 @@ const DepartmentCard: React.FC<dropDownProps> = ({ description, department }) =>
                         src={clicked ? "./assets/departments/minus.png" : "./assets/departments/plus.png"}
                     />
                 </div>
-                <p>
+                <p className="text-left">
                     {department}
                 </p>
             </div>
             <motion.div 
-                className={`text-left font-light ml-[2rem] mt-3 ${!clicked ? "hidden": "block"}`}
+                className={`md:text-left font-light ml-[2rem] mt-3 ${!clicked ? "hidden": "block"}`}
                 initial="exit"
                 animate={clicked ? "enter" : "exit"}
                 variants={dropDownAnimation}
