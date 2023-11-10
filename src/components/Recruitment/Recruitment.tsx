@@ -103,7 +103,7 @@ const Recruitment = () => {
             </div>
 
             {/* Recruitment */}
-            <div className="hidden flex-row xl:flex justify-evenly w-screen">
+{/*             <div className="hidden flex-row xl:flex justify-evenly w-screen">
                 <div className='flex flex-col'>
                     <VerticalTimeline
                         layout={'1-column-left'}
@@ -133,7 +133,7 @@ const Recruitment = () => {
                     </div>
                 </div>
             </div>
-
+ */}
 
 
 
