@@ -9,7 +9,11 @@ jobs:
       steps:
       - name: Checkout repository
         uses: actions/checkout@v2
-
+        with:
+            fetch-depth: 0
+            ssh-key: ${{ secrets.SSH_PRIVATE_KEY }}
+            persist-credentials: false
+        
       - name: NPM install 
         run: | 
             npm i
