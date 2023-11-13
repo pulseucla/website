@@ -1,9 +1,9 @@
 {
-  "name": "pulse-site",
+  "name": "website",
   "private": false,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://lawtlee.github.io/pulse-site",
+  "homepage": "https://pulseucla.github.io/website/",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
