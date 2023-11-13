@@ -1,0 +1,19 @@
+name: Update Site
+
+on: [push, workflow_dispatch,]
+
+jobs:
+    build:
+      runs-on: ubuntu-latest
+  
+      steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: NPM install 
+        run: | 
+            npm i
+      
+      - name: Run Deployment
+        run: |
+            npm run deploy

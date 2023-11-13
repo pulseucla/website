@@ -2,7 +2,7 @@ import Navbar from "../Miscellaneous/Navbar";
 import Footer from "../Miscellaneous/footer";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import SimpleSlider from '../Miscellaneous/Slider';
+// import SimpleSlider from '../Miscellaneous/Slider';
 import * as constants from "./constants";
 
 const SaintBaldrick = () => {

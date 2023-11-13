@@ -1,10 +1,11 @@
 import { useState } from 'react';
 
-import Navbar from './Miscellaneous/Navbar';
-import Footer from './Miscellaneous/footer';
-import Card from './Miscellaneous/Card';
-import { cards } from '../constants';
+import Navbar from '../Miscellaneous/Navbar';
+import Footer from '../Miscellaneous/footer';
+import Card from '../Miscellaneous/Card';
+import { cards } from '../../constants';
 import { Link } from 'react-router-dom';
+import { Blurb_1, Blurb_2, images } from './constants';
 
 const Home = ({}) => {
     const [joinTeam, setTeam] = useState(false)
@@ -41,9 +42,7 @@ const Home = ({}) => {
                     </div>
                     <div className=" flex w-[80%] md:ml-[5rem] ml-1 items-center justify-center flex-wrap flex-row lg:flex-nowrap">
                         <p className="font-light text-wrap lg:text-[24px] text-left text-[16px]">
-                            PULSE provides UCLA students with the opportunity to
-                            gain real-world experience through exposure to
-                            state-of-the-art clinical practices.
+                            {Blurb_1}
                         </p>
                         <div
                             className={`pl-2 pr-2 h-10 lg:h-16 lg:w-[40%] lg:pl-0 lg:pr-0 ${
@@ -91,7 +90,7 @@ const Home = ({}) => {
             <div className="flex flex-row flex-wrap justify-center items-center">
                 <div className="flex justify-center">
                     <img
-                        src="./assets/home2.jpeg"
+                        src={images[0]}
                         className="lg:w-[70%] sm:w-[40%]"
                     />
                 </div>
@@ -118,19 +117,7 @@ const Home = ({}) => {
                         </div>
                         <div className="text-left font-light xl:text-[22px] text-[16px]">
                             <p>
-                                PULSE (Pre-medical Undergraduate Learning
-                                through Shadowing Experience) is a UCLA
-                                student-run physician shadowing organization
-                                aiming to provide members with a holistic
-                                overview of the medical field through exposure
-                                to a diverse array of clinical specialties,
-                                community involvement, and professional
-                                development. As an undergraduate organization,
-                                we aspire to encourage our members to explore
-                                the multi-faceted nature of healthcare in order
-                                to challenge them intellectually, broaden their
-                                perspectives, and better prepare them for a
-                                career in medicine.
+                                {Blurb_2}
                             </p>
                         </div>
                     </div>
