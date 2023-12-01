@@ -50,7 +50,7 @@ jobs:
 
     - name: Merge and Push Branch
       run: |
-        git merge --allow-unrelated-histories temp -m "Updates"
+        git merge --allow-unrelated-histories -Xtheirs temp -m "Updates"
         git push origin gh-pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
