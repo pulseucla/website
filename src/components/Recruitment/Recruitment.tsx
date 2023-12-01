@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+// import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 
 import Navbar from "../Miscellaneous/Navbar";
 import Footer from "../Miscellaneous/footer";
-import { Why_Apply, Recruitment_Timeline, Info_Sesh, Application_Link } from './constants';
+import { Why_Apply, /*Recruitment_Timeline, Info_Sesh,*/ Application_Link } from './constants';
 import { Link } from "react-router-dom";
 
 interface card {
@@ -25,50 +25,50 @@ const Card: React.FC<card> = ({ icon, title, border_color, text_color, descripti
     )
 }
 
-interface timeline {
-    timeline: {
-        step: string,
-        icon: string,
-        description: string,
-    }
-}
+// interface timeline {
+//     timeline: {
+//         step: string,
+//         icon: string,
+//         description: string,
+//     }
+// }
 
-const Timeline : React.FC<timeline> = ({timeline}) => {
-    return (
-        <VerticalTimelineElement
-            icon={
-                <div className='flex justify-center items-center w-full h-full'>
-                    <img
-                    src={timeline.icon}
-                    alt={"icon"}
-                    className=" object-contain"
-                    />
-                </div>
-            }
-        >
-            <div className="flex-col flex gap-2 max-w-[432px] w-[80%] text-left">
-                {/* <p className="font-bold md:text-[36px] text-[24px]"> {timeline.step} </p> */}
-                <p className="font-light">{timeline.step}</p>
-                <p className="font-light"> {timeline.description} </p>
-            </div>
-            {/* <p>Hello</p> */}
-        </VerticalTimelineElement>
-    )
-}
+// const Timeline : React.FC<timeline> = ({timeline}) => {
+//     return (
+//         <VerticalTimelineElement
+//             icon={
+//                 <div className='flex justify-center items-center w-full h-full'>
+//                     <img
+//                     src={timeline.icon}
+//                     alt={"icon"}
+//                     className=" object-contain"
+//                     />
+//                 </div>
+//             }
+//         >
+//             <div className="flex-col flex gap-2 max-w-[432px] w-[80%] text-left">
+//                 {/* <p className="font-bold md:text-[36px] text-[24px]"> {timeline.step} </p> */}
+//                 <p className="font-light">{timeline.step}</p>
+//                 <p className="font-light"> {timeline.description} </p>
+//             </div>
+//             {/* <p>Hello</p> */}
+//         </VerticalTimelineElement>
+//     )
+// }
 
-interface info {
-    info: {
-        details: string
-    }
-}
+// interface info {
+//     info: {
+//         details: string
+//     }
+// }
 
-const Info : React.FC<info> = ({info}) => {
-    return(
-        <div className="text-left">
-            <p>{info.details}</p><br />
-        </div>
-    )
-}
+// const Info : React.FC<info> = ({info}) => {
+//     return(
+//         <div className="text-left">
+//             <p>{info.details}</p><br />
+//         </div>
+//     )
+// }
 
 const Recruitment = () => {
     const [hover, setHover] = useState(false)
@@ -103,7 +103,7 @@ const Recruitment = () => {
             </div>
 
             {/* Recruitment */}
-            <div className="hidden flex-row xl:flex justify-evenly w-screen">
+{/*             <div className="hidden flex-row xl:flex justify-evenly w-screen">
                 <div className='flex flex-col'>
                     <VerticalTimeline
                         layout={'1-column-left'}
@@ -133,7 +133,7 @@ const Recruitment = () => {
                     </div>
                 </div>
             </div>
-
+ */}
 
 
 
@@ -151,7 +151,7 @@ const Recruitment = () => {
                         because they will no longer be undergraduates when they begin shadowing.​ <br/><br/>
                     </p>
                 </div>
-                <div className='flex flex-col'>
+                {/* <div className='flex flex-col'>
                     <VerticalTimeline
                         layout={'1-column-left'}
                     >
@@ -165,7 +165,7 @@ const Recruitment = () => {
                     {Info_Sesh.map((info, index) => (
                         <Info key={index} info={info}/>
                     ))}
-                </div>
+                </div> */}
             </div>
 
             <div className="lg:w-[60vw] w-[80vw] text-[16px] font-bold">
