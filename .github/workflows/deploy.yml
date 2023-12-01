@@ -54,3 +54,7 @@ jobs:
         git push origin gh-pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Cleanup Remote Branch
+      run: |
+        git push origin --delete temp
