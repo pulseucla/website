@@ -45,7 +45,7 @@ jobs:
       run: |
         git checkout -b gh-pages
         git merge --allow-unrelated-histories temp -m "Updates"
-        git push
+        git push --set-upstream origin gh-pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     - name: Delete Temp branch
