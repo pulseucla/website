@@ -10,7 +10,7 @@ const images = [
 const Community_Intro = {
     Top_Half: "Volunteer in",
     Bottom_Half: "Our Community",
-    Text: "Lorem ipsum dolor sit amet consectetur. Nibh ornare libero venenatis pellentesque vivamus enim. Ut feugiat eget lacus id."
+    Text: ""
 }
 
 const Upcoming_Events = [
