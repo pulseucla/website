@@ -45,7 +45,9 @@ jobs:
       run: |
         git checkout -b gh-pages
         git branch gh-pages -u <origin/gh-pages>
-        git fetch
+
+    - name: Merge and Push Branch
+      run: |
         git merge --allow-unrelated-histories temp -m "Updates"
         git push
       env:
