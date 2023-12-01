@@ -43,6 +43,7 @@ jobs:
 
     - name: Checkout gh-pages Branch
       run: |
+        git fetch origin
         git checkout -b gh-pages
         git branch gh-pages -u origin/gh-pages
 
