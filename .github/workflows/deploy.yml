@@ -38,14 +38,15 @@ jobs:
       run: |
         git add .
         git commit -m "Update Website"
+        git fetch origin
+        git push --set-upstream origin temp
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Checkout gh-pages Branch
       run: |
-        git fetch origin
-        git checkout -b gh-pages
-        git branch gh-pages -u origin/gh-pages
+        git checkout -b gh-pages origin/gh-pages
+        git pull
 
     - name: Merge and Push Branch
       run: |
