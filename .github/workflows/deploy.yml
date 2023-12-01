@@ -41,16 +41,14 @@ jobs:
       env: 
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    # - name: Checkout gh-pages Branch
-    #   run: |
-    #     git checkout -b gh-pages
-    #     git branch gh-pages -u origin/gh-pages
+    - name: Checkout gh-pages Branch
+      run: |
+        git checkout -b gh-pages
+        git branch gh-pages -u origin/gh-pages
 
     - name: Merge and Push Branch
       run: |
-        ls
+        git merge --allow-unrelated-histories temp -m "Updates"
+        git push origin gh-pages
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Delete Temp branch
-      run: git branch -D temp
