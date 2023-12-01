@@ -45,7 +45,6 @@ jobs:
       run: |
         git checkout -b gh-pages
         git merge --allow-unrelated-histories temp -m "Updates"
-        git --set-upstream=origin/gh-pages gh-pages
         git push
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
