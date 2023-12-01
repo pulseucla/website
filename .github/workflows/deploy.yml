@@ -25,7 +25,7 @@ jobs:
       run: npm run build
     
     - name: Delete Files
-      run: ls -A | grep -E -v '^(.git|.github|dist)$' | xargs rm -r
+      run: ls -A | grep -E -v '^(.git|dist)$' | xargs rm -r
 
     - name: Move Dist Contents out and Delete
       run: |
@@ -44,7 +44,7 @@ jobs:
     - name: Checkout gh-pages Branch
       run: |
         git checkout -b gh-pages
-        git branch --set-upstream=origin/gh-pages gh-pages
+        git branch gh-pages -u <origin/gh-pages>
         git fetch
         git merge --allow-unrelated-histories temp -m "Updates"
         git push
