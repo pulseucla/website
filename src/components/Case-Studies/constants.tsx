@@ -38,7 +38,7 @@ const Blurb_2 = () => {
 }
 
 const images = [
-    "./assets/clinical-symposiums/",
+    "./assets/clinical-symposiums/pulse clinical symposium.heic",
     "./assets/clinical-symposiums/pulse clinical symposium.heic",
 ]
 
