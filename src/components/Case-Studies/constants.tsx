@@ -38,8 +38,8 @@ const Blurb_2 = () => {
 }
 
 const images = [
-    "./assets/clinical-symposiums/hero.png",
-    "./assets/clinical-symposiums/why.png",
+    "./assets/clinical-symposiums/",
+    "./assets/clinical-symposiums/pulse clinical symposium.heic",
 ]
 
 export { Blurb_1, Blurb_2, images }
