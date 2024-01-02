@@ -44,16 +44,19 @@ interface pastProps {
 }
 
 const PastCard: React.FC<pastProps> = ({ event_name, image }) => {
-    return(
-        <div className="max-w-[600px] w-[80vw] md:h-[400px] flex flex-col items-left md:justify-evenly mb-4 bg-gradient-to-tr from-white/80 to-white/0">
-            <div className="bg-gradient-radial from-white/80 to-white/0 z-[-1]">
-                <img src={image} className="h-[100%] w-[100%]"/>
+    return (
+        <div className="max-w-[600px] w-[80vw] md:h-[400px] flex flex-col items-left md:justify-evenly mb-10">
+            <div className="z-[-1] max-w-[600px] w-[80vw] md:h-[400px] flex items-center justify-center">
+                <img
+                    src={image}
+                    className="max-h-full max-w-full object-center"
+                />
             </div>
             <div className="md:text-[36px] text-[24px] text-left z-[1]">
                 <p>{event_name}</p>
             </div>
         </div>
-    )
+    );
 }
 
 const Community = () => {
@@ -127,7 +130,7 @@ const Community = () => {
                         </svg>
                     </div>
                 </div>
-                <div className={`flex flex-row flex-wrap justify-evenly gap-4`}>
+                <div className={`flex flex-row flex-wrap justify-evenly gap-5`}>
                     {constants.Past_Events.map((event, index) => (
                         <PastCard key={index} {...event} />
                     ))}
