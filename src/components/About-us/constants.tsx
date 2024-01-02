@@ -1,7 +1,7 @@
 const Pulse_Purpose = "PULSE (Pre-medical Undergraduate Learning through Shadowing Experience) is a UCLA student-run physician shadowing organization aiming to provide members with a holistic overview of the medical field through exposure to a diverse array of clinical specialties, community involvement, and professional development. As an undergraduate organization, we aspire to encourage our members to explore the multi-faceted nature of healthcare in order to challenge them intellectually, broaden their perspectives, and better prepare them for a career in medicine."
 
 const images = [
-    "./assets/about-us/pulse group jackets.jpg",
+    "./assets/about-us/pulse jacket 23.jpg",
     "./assets/about-us/Royce.png",
     "./assets/about-us/reagan.png",
     "./assets/about-us/shave.png",
