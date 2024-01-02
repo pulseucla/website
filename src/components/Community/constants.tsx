@@ -1,9 +1,9 @@
 const images = [
     "./assets/community/pic1.png",
-    "./assets/community/pic2.pgn",
-    "./assets/community/pic3.pgn",
+    "./assets/community/pic2.png",
+    "./assets/community/pic3.png",
     "./assets/community/pic4.png",
-    "./assets/community/pic5.pgn",
+    "./assets/community/pic5.png",
     "./assets/community/pic6.png",
 ];
 
