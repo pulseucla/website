@@ -19,8 +19,8 @@ const SaintBaldrick = () => {
                             className="md:block hidden"
                         />
                     </div>
-                    <div className="overflow-hidden">
-                        <img src={constants.images[0]} />
+                    <div className="overflow-hidden lg:h-[500px] lg:w-[500px] relative">
+                        <img src={constants.images[0]} className="object-center"/>
                     </div>
                 </div>
                 <div className="md:text-[36px] text-[24px] font-light lg:text-left max-w-[1025px]">

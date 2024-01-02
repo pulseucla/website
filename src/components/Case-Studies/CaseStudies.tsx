@@ -13,7 +13,7 @@ const Case_Study = () => {
                     <p className="text-[48px]"> Clinical Symposiums </p>
                     <constants.Blurb_1/>
                 </div>
-                <div>
+                <div className="lg:w-[40vw]">
                     <img src={constants.images[0]} className="lg:w-fit "/>
                 </div>
             </div>
