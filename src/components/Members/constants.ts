@@ -1,4 +1,4 @@
-const Big_Image = "./assets/members/hero.png"
+const Big_Image = "./assets/members/pulse funny group 23.jpg"
 
 const Pulse_Members = [
     {
@@ -82,15 +82,15 @@ const Pulse_Members = [
         image: "./assets/members/Erick Nedd.jpg",
         name: "Erick Nedd (he/him)",
         major: "Microbiology, Immunology, and Molecular Genetics",
-        year: "2024",
+        year: "2025",
         fact: "I love learning new languages! I currently speak English, Spanish, French Patois and a little bit of Chinese.",
     },
       {
         image: "./assets/members/Fernanda Madrazo.jpg",
         name: "Fernanda Madrazo (she/her)",
-        major: "",
+        major: "Human Biology and Society",
         year: "2025",
-        fact: "I love learning new languages! I currently speak English, Spanish, French Patois and a little bit of Chinese.",
+        fact: "I have a fake tooth.",
     },
       {
         image: "./assets/members/George Kokotsis.jpg",
@@ -199,9 +199,9 @@ const Pulse_Members = [
     {
         image: "./assets/members/Margaret Pham.jpg",
         name: "Margaret Pham (she/her)",
-        major: "Biochem",
+        major: "Biochemistry",
         year: "2024",
-        fact: "",
+        fact: "I'm a Canadian dual citizen!",
     },
     {
         image: "./assets/members/Marlen Hernandez.jpg",
@@ -235,7 +235,7 @@ const Pulse_Members = [
         image: "./assets/members/natalie k.jpg",
         name: "Natalie Keung (she/her)",
         major: "Biology",
-        year: "2025",
+        year: "2024",
         fact: "I love being outdoors but I'm allergic to practically everything outside. ",
     },
     {
@@ -277,7 +277,7 @@ const Pulse_Members = [
         image: "./assets/members/Simer Shera.jpg",
         name: "Simer Shera (she/her)",
         major: "Microbiology, Immunology, and Molecular Genetics",
-        year: "2025",
+        year: "2023",
         fact: "I have two english bulldogs who used to be social media famous ",
     },
     {
