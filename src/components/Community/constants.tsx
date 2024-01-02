@@ -43,32 +43,28 @@ const Upcoming_Events = [
 
 const Past_Events = [
     {
-        event_name: "New member social 2023",
+        event_name: "New member social",
         image: "./assets/community/pulse new mem social 23.jpg"
     },
      {
-        event_name: "New member social 2022",
-        image: "./assets/community/pulse new member social 22.jpg"
+        event_name: "Fall professional pictures",
+        image: "./assets/community/pulse group 23.jpg"
     },
     {
-        event_name: "Informal social to get tacos",
-        image: "./assets/community/pulse informal social- tacos.jpg"
-    },
-    {
-        event_name: "Joint board dinner",
-        image: "./assets/community/pulse joint board dinner 23.jpg"
-    },
-    {
-        event_name: "PULSE-giving 2023",
+        event_name: "PULSE-giving",
         image: "./assets/community/pulse_friendsgiving.jpg"
     },
     {
-        event_name: "PULSE-giving 2023",
-        image: "./assets/community/pulse_friendsgiving.jpg"
+        event_name: "Game night!",
+        image: "./assets/community/pulse game night.jpg"
     },
     {
-        event_name: "UCLA Blood Donation",
-        image: "./assets/community/blood_donation.jpeg"
+        event_name: "Outreach event with Water Drop LA",
+        image: "./assets/community/pulse water drop.jpg"
+    },
+    {
+        event_name: "Outreach event with Midnight Mission",
+        image: "./assets/community/pulse midnight mission.jpg"
     },
 ];
 
