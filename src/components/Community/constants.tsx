@@ -44,7 +44,7 @@ const Upcoming_Events = [
 const Past_Events = [
     {
         event_name: "Informal social to get tacos",
-        image: "./assets/community/pulse informal social-tacos.jpg"
+        image: "./assets/community/pulse informal social- tacos.jpg"
     },
     {
         event_name: "UCLA Blood Donation",
