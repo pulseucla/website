@@ -19,14 +19,16 @@ const SaintBaldrick = () => {
                             className="md:block hidden"
                         />
                     </div>
-                    <div className="overflow-hidden lg:h-[500px] lg:w-[500px] relative">
-                        <img src={constants.images[0]} className="object-center"/>
+                    <div className="flex flex-row gap-5 flew-wrap">
+                        <div className="overflow-hidden md:h-[500px] md:w-[500px] relative">
+                            <img src={constants.images[0]} className="object-center"/>
+                        </div>
+                        <div className="md:text-[32px] text-[24px] font-light lg:text-left max-w-[650px] text-wrap">
+                            <p className="wrap">
+                                {constants.Blurbs.Main_Blurb.text}
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div className="md:text-[36px] text-[24px] font-light lg:text-left max-w-[1025px]">
-                    <p>
-                        {constants.Blurbs.Main_Blurb.text}
-                    </p>
                 </div>
             </div>
 
