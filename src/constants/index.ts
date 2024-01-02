@@ -38,7 +38,7 @@ const cards = [
         title: "ST BALDRICKS",
         description: "Support research on childhood cancer",
         image:"./assets/cards/St_Bladricks.svg",
-        link: "st_baldricks"
+        link: "st-baldricks"
     }
 ];
 
