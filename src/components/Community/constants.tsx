@@ -1,10 +1,10 @@
 const images = [
-    "./assets/community/pulse informal social-tacos.jpg",
-    "./assets/community/pulse joint board dinner 23.jpg",
-    "./assets/community/pulse friendsgiving.jpg",
+    "./assets/community/pic1.png",
+    "./assets/community/pic2.pgn",
+    "./assets/community/pic3.pgn",
     "./assets/community/pic4.png",
-    "./assets/community/pulse_halloween.jpg",
-    "./assets/community/pulse w 23 retreat.jpg",
+    "./assets/community/pic5.pgn",
+    "./assets/community/pic6.png",
 ];
 
 const Community_Intro = {
@@ -43,8 +43,8 @@ const Upcoming_Events = [
 
 const Past_Events = [
     {
-        event_name: "UCLA Blood Donation",
-        image: "./assets/community/blood_donation.jpeg"
+        event_name: "Informal social to get tacos",
+        image: "./assets/community/pulse informal social-tacos.jpg"
     },
     {
         event_name: "UCLA Blood Donation",
