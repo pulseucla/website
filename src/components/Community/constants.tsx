@@ -1,14 +1,14 @@
 const images = [
-    "./assets/community/pic1.png",
-    "./assets/community/pic2.png",
-    "./assets/community/pic3.png",
+    "./assets/community/pulse informal social-tacos.jpg",
+    "./assets/community/pulse joint board dinner 23.jpg",
+    "./assets/community/pulse friendsgiving.jpg",
     "./assets/community/pic4.png",
-    "./assets/community/pic5.png",
-    "./assets/community/pic6.png",
+    "./assets/community/pulse_halloween.jpg",
+    "./assets/community/pulse w 23 retreat.jpg",
 ];
 
 const Community_Intro = {
-    Top_Half: "Volunteer in",
+    Top_Half: "Welcome to",
     Bottom_Half: "Our Community",
     Text: ""
 }
