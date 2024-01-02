@@ -1,5 +1,5 @@
 const images = [
-    "./assets/PULSE_members.png",
+    "./assets/pulse group 23.jpg",
 ]
 
 const Blurb_1 = "PULSE provides UCLA students with the opportunity to gain real-world experience through exposure to state-of-the-art clinical practices."
