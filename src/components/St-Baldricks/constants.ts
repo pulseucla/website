@@ -1,6 +1,6 @@
 const images = [
-    "./assets/st-baldricks/hero.png",
-    "./assets/st-baldricks/pulse_field.png",
+    "./assets/st-baldricks/pulse brave the shave 22.jpg",
+    "./assets/st-baldricks/pulse brave the shave pie.jpg",
 ]
 
 const Blurbs = {
