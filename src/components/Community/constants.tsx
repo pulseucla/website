@@ -43,6 +43,14 @@ const Upcoming_Events = [
 
 const Past_Events = [
     {
+        event_name: "New member social 2023",
+        image: "./assets/community/pulse new mem social 23.jpg"
+    },
+     {
+        event_name: "New member social 2022",
+        image: "./assets/community/pulse new member social 22.jpg"
+    },
+    {
         event_name: "Informal social to get tacos",
         image: "./assets/community/pulse informal social- tacos.jpg"
     },
@@ -51,16 +59,12 @@ const Past_Events = [
         image: "./assets/community/pulse joint board dinner 23.jpg"
     },
     {
-        event_name: "New member social 2023",
-        image: "./assets/community/pulse new mem social 23.jpg"
+        event_name: "PULSE-giving 2023",
+        image: "./assets/community/pulse_friendsgiving.jpg"
     },
     {
-        event_name: "New member social 2022",
-        image: "./assets/community/pulse new member social 22.jpg"
-    },
-    {
-        event_name: "UCLA Blood Donation",
-        image: "./assets/community/blood_donation.jpeg"
+        event_name: "PULSE-giving 2023",
+        image: "./assets/community/pulse_friendsgiving.jpg"
     },
     {
         event_name: "UCLA Blood Donation",
