@@ -147,19 +147,13 @@ const Pulse_Members = [
         major: "Microbiology, Immunology, and Molecular Biology",
         year: "2023",
         fact: "I will point out almost every dog I see to you ",
-    },     {
+    },     
+    {
         image: "./assets/members/Jonathan Phan.jpg",
         name: "Jonathan Phan (he/him)",
         major: "Bioengineering and Physiological Sciences",
         year: "2024",
         fact: "I once slept for a whole day (26hrs to be exact) after finals week. I legit skipped a day of life. ",
-    },
-         {
-        image: "./assets/members/Jordan O_Brien.jpg",
-        name: "Jordan O'Brien (she/her)",
-        major: "Physiological Sciences",
-        year: "2024",
-        fact: "I'm going to backpack through the Sierra Nevada mountains during my gap year!",
     },
      {
         image: "./assets/members/Joseph Lee.jpg",
