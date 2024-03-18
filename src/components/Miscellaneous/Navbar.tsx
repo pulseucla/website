@@ -23,7 +23,7 @@ const Navbar = ({}) => {
     const [dropDown3, setDrop3] = useState(false)
 
     return(
-        <nav className={`w-screen self-center flex flex-col items-center`}>
+        <nav className={`w-[99vw] max-w-screen self-center flex flex-col items-center`}>
             <div className='flex items-center justify-evenly flex-row w-full md:p-0 pl-2 pr-2'>
                 <div className='text-left'>
                     <Link to="/" className='font-semibold md:text-[23px] text-[16px] text-black hover:text-black'>PULSE at UCLA</Link>

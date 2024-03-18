@@ -14,14 +14,14 @@ const Member = () => {
     const memoizedMembers = useMemo(() => Pulse_Members, []); // Memoize the array
 
     return (
-        <div className="flex flex-col gap-10 items-center">
+        <div className="flex flex-col gap-10 items-center max-w-screen w-[99vw]">
             <Navbar/>
 
             <div className="flex flex-col flex-nowrap justify-center items-center z-[-1]">
-                <div className="w-[80vw] hidden md:block">
-                    <img src={Big_Image} className="w-[100%]"/>
+                <div className="w-[80vw] hidden md:block overflow-hidden h-[65vh]">
+                    <img src={Big_Image} className="w-full object-cover object-center h-full"/>
                 </div>
-                <div className={`flex flex-col md:absolute relative p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen items-center h-full justify-center`}>
+                <div className={`flex flex-col md:absolute relative p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-[99vw] max-w-screen items-center h-full justify-center`}>
                     <p className="text-[48px]">A Team with <span className="text-[#DE505B]">Heart</span> & <span className="underline">Pulse</span></p>
                     <div className="flex flex-row items-center justify-evenly md:w-[30vw] w-fit">
                         <p className="text-[36px]">Get to Know Us</p>

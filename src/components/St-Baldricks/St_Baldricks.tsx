@@ -7,7 +7,7 @@ import * as constants from "./constants";
 
 const SaintBaldrick = () => {
     return (
-        <div className="flex flex-col items-center w-screen gap-10 overflow-hidden">
+        <div className="flex flex-col items-center w-[99vw] max-w-screen gap-10 overflow-hidden">
             <Navbar />
             <div className="flex flex-col w-screen gap-10 lg:ml-[30vh] items-center lg:items-start">
                 <div className="flex flex-col lg:text-left w-full gap-5">

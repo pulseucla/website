@@ -7,9 +7,9 @@ import * as about from "./constants"
 
 const About = () => {
     return (
-        <div className="flex flex-col gap-10 items-center w-screen">
+        <div className="flex flex-col gap-10 items-center w-[99vw] max-w-screen overflow-hidden">
             <Navbar />
-            <div className="flex flex-col md:hidden justify-center items-center gap-5 w-screen">
+            <div className="flex flex-col md:hidden justify-center items-center gap-5 w-[99vw] max-w-screen">
                 <div className="w-[80vw] h-[1px] bg-black"/>
                 <div className="flex-row justify-evenly w-screen flex">
                     
@@ -84,7 +84,7 @@ const About = () => {
 
             {/* Hospital */}
 
-            <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-evenly w-screen items-center text-left font-light mt-10 mb-10">
+            <div className="flex flex-row flex-wrap lg:flex-nowrap gap-5 justify-evenly w-[99vw] max-w-screen items-center text-left font-light mt-10 mb-10">
                 <div>
                     <img src={about.images[2]} className="lg:w-[50vw] w-[80vw]"/>
                 </div>
@@ -94,7 +94,7 @@ const About = () => {
             </div>
 
             {/* Shave + Zoom */}
-            <div className="flex flex-row flex-wrap justify-evenly w-screen items-center text-left text-[24px] font-light">
+            <div className="flex flex-row flex-wrap justify-evenly w-[99vw] max-w-screen items-center text-left text-[24px] font-light">
                 <div className="flex flex-col lg:w-[40%] gap-5 w-[80vw]">
                     <img src={about.images[3]}/>
                     <about.Blurb_3/>

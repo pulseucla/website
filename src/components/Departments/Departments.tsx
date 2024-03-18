@@ -70,7 +70,7 @@ const DepartmentCard: React.FC<dropDownProps> = ({ description, department }) =>
 
 const Department = () => {
     return (
-        <div className="flex flex-col gap-10 items-center w-screen">
+        <div className="flex flex-col gap-10 items-center w-[99vw] max-w-screen">
             <Navbar />
 
             {/* Introduction */}
@@ -95,7 +95,7 @@ const Department = () => {
                         />
                     </div>
                 </div>
-                <div className={`flex flex-col lg:absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen items-center h-[100%] justify-center`}>
+                <div className={`flex flex-col lg:absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-[99vw] max-w-screen items-center h-[100%] justify-center`}>
                     <p className="text-[48px]">Shadowing Experience</p>
                     <div className="rounded-[100px] bg-[#B05454] p-3 lg:w-[40vw]">
                         <p className="text-white">
@@ -124,7 +124,7 @@ const Department = () => {
             </div>
 
             {/* The Hard Stuff, AKA the dropDown */}
-            <div className="w-screen bg-[#B05454] bg-opacity-[25%] p-10 pt-10 flex-col items-center flex gap-5">
+            <div className="w-[99vw] max-w-screen bg-[#B05454] bg-opacity-[25%] p-10 pt-10 flex-col items-center flex gap-5">
                 <p className="text-[50px]"> Departments </p>
                 <div className="w-[80vw] flex-col flex gap-4 border-2 p-5 rounded-[25px] bg-white">
                     {constants.departments.map((department, index) => (

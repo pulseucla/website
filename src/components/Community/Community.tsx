@@ -61,11 +61,11 @@ const PastCard: React.FC<pastProps> = ({ event_name, image }) => {
 
 const Community = () => {
     return(
-        <div className="flex flex-col items-center w-screen gap-10">
+        <div className="flex flex-col items-center w-[99vw] max-w-screen gap-10">
             <Navbar/>
-            <div className="flex-col md:hidden flex justify-center items-center gap-5 w-screen">
+            <div className="flex-col md:hidden flex justify-center items-center gap-5 w-[99vw] max-w-screen">
                 <div className="w-[80vw] h-[1px] bg-black"/>
-                <div className="flex-row justify-evenly w-screen flex">
+                <div className="flex-row justify-evenly w-[99vw] max-w-screen flex">
                     <Link to="/st-baldricks">St. Baldrick's Event</Link>
                 </div>
                 <div className="w-[80vw] h-[1px] bg-black"/>
@@ -79,7 +79,7 @@ const Community = () => {
                     <div className="mt-5"><img src={constants.images[4]}/></div>
                     <div className="mb-5"><img src={constants.images[5]}/></div>
                 </div>
-                <div className={`flex flex-col absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-screen 
+                <div className={`flex flex-col absolute p-5 bg-gradient-radial from-white/80 to-white/0 rounded-[100px] w-[99vw] max-w-screen 
                                 items-center h-[100%] justify-center md:gap-5 gap-2`}>
                     <div className="md:text-[48px] text-[24px]">
                         <p className="">{constants.Community_Intro.Top_Half}</p>
@@ -118,7 +118,7 @@ const Community = () => {
             </div> */}
                 
             {/* Past Events */}
-            <div className={`flex flex-col justify-center items-center w-screen gap-5`}>
+            <div className={`flex flex-col justify-center items-center w-[99vw] max-w-screen gap-5`}>
                 <div className="flex flex-row items-center gap-5 justify-left w-[80%]">
                     <p className="md:text-[56px] text-[36px]">
                         Past Events
